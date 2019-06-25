@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+set -e
+
+filename="$1"
+
+dir=$(dirname "$0")
+fullname="$dir/$filename"
+
+if [ -f "$fullname" ]; then
+  echo "File exists"
+  exit 1
+fi
+
+echo '#!/usr/bin/env bash' > "$fullname"
+cat <&0 >> "$fullname"
+chmod 755 "$fullname"

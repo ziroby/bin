@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -e
+
+filename="$1"
+
+dir=$(dirname "$0")
+fullname="$dir/$filename"
+
+if [ '!' -f "$fullname" ]; then
+  echo "File not found"
+  exit 1
+fi
+
+cat "$fullname"
