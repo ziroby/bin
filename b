@@ -6,9 +6,13 @@ if [ -f pom.xml ]; then
   command=mvn
   default=install
 
-elif [ -f build.sbt ]; then
+elif [ -f build.gradle ]; then
   command=gradle
   default=package
+
+elif [ -f build.sbt ]; then
+  command=sbt
+  default=build
 
 else 
   echo "Unknown build directory"
