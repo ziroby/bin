@@ -12,7 +12,7 @@ elif [ -f build.gradle ]; then
 
 elif [ -f build.sbt ]; then
   command=sbt
-  default=build
+  default=publishLocal
 
 else 
   echo "Unknown build directory"
