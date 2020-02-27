@@ -2,13 +2,18 @@
 #!/usr/bin/env bash
 set -ex
 
-if [ -f pom.xml ]; then
-  command=mvn
-  default=install
+
+if [ -f ./gradlew ]; then
+  command=./gradlew
+  default=assemble
 
 elif [ -f build.gradle ]; then
   command=gradle
-  default=package
+  default=assemble
+
+elif [ -f pom.xml ]; then
+  command=mvn
+  default=install
 
 elif [ -f build.sbt ]; then
   command=sbt
