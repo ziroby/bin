@@ -28,3 +28,9 @@ zsh
 ```zsh
 source scripts/foo
 ```
+
+None
+
+```
+source scripts/foo
+```
