@@ -3,28 +3,28 @@
 shell script:
 
 ```shell script
-rm -rf /var/log
+source scripts/foo
 ```
 
 shell-script
 
 ```shell-script
-rm -rf /var/log
+source scripts/foo
 ```
 
 osh
 ```sh
-rm -rf /var/log
+source scripts/foo
 ```
 
 bash
 
 ```bash
-rm -rf /var/log
+source scripts/foo
 ```
 
 zsh
 
 ```zsh
-rm -rf /var/log
+source scripts/foo
 ```
