@@ -1,18 +1,26 @@
 # This is a test
 
+shell script:
 ```shell script
-mvn spring-boot:run
+rm -rf /var/log
 ```
 
+shell-script
+```shell-script
+rm -rf /var/log
+```
+
+sh
 ```sh
-mvn spring-boot:run
+rm -rf /var/log
 ```
 
+bash
 ```bash
-mvn spring-boot:run
+rm -rf /var/log
 ```
 
-
-```sh
-mvn spring-boot:run
+zsh
+```zsh
+rm -rf /var/log
 ```
