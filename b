@@ -19,6 +19,14 @@ elif [ -f build.sbt ]; then
   command=sbt
   default=publishLocal
 
+elif [ -f package.json ]; then
+  command=npm
+  default=install
+
+elif [ -f Cargo.toml ]; then
+  command=cargo
+  default=build
+
 else 
   echo "Unknown build directory"
   exit 1
